@@ -3,11 +3,8 @@
 session_start();
 ?>
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> origin/master
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -23,13 +20,13 @@ session_start();
 
 	<div id="page-wrap">
 
-		<h1>Quiz </h1>
+		<h1>Final Quiz</h1>
 		
         <?php
             $host = 'localhost';
 			$user = 'root';
 			$pwd = '';
-			$db = 'learningms';
+			$db = 'villgro';
 
 	$conn = mysql_connect($host,$user,$pwd);
 	if(!$conn)
@@ -56,23 +53,39 @@ session_start();
             
             echo "<div id='results'>$totalCorrect / 5 correct</div>";
 
-<<<<<<< HEAD
-            $insert = "INSERT INTO quiz VALUES(1,1,1,1,1,'$totalCorrect',5)";
-
-
-=======
             $name = $_SESSION['name'];
 
-            $insert = "INSERT INTO quiz VALUES($totalCorrect,$name)";
->>>>>>> origin/master
+            echo $name;
 
+            if ($totalCorrect<3)
+            {
+            	echo "Please replay this level";
+           ?>
+<html>
+<body>
+	<a href = "index1.php"> index</a>
+
+</body>
+</html>
+
+           <?php
+
+            }
+            else
+            {
+
+            	echo "proceed to the next level";//+"href = index2.php";
+            }
+
+            $insert = "INSERT INTO quiz VALUES($totalCorrect,'$name')";
+
+            //echo $insert;
 	$run_query = mysql_query($insert,$conn);
 
 		if(!$run_query)
 			echo "Failed to insert values\n";
             
         ?>
-
 	
 	</div>
 	
