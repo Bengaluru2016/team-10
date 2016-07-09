@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -13,7 +18,7 @@
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<h1>Quiz </h1>
 		
         <?php
             $host = 'localhost';
@@ -46,7 +51,9 @@
             
             echo "<div id='results'>$totalCorrect / 5 correct</div>";
 
-            $insert = "INSERT INTO quiz VALUES(1,1,1,1,1,'$totalCorrect','')";
+            $insert = "INSERT INTO quiz VALUES(1,1,1,1,1,'$totalCorrect',5)";
+
+
 
 	$run_query = mysql_query($insert,$conn);
 
@@ -54,6 +61,7 @@
 			echo "Failed to insert values\n";
             
         ?>
+
 	
 	</div>
 	
