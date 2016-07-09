@@ -20,13 +20,13 @@ session_start();
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<h1>Final Quiz</h1>
 		
         <?php
             $host = 'localhost';
 			$user = 'root';
 			$pwd = '';
-			$db = 'learningms';
+			$db = 'villgro';
 
 	$conn = mysql_connect($host,$user,$pwd);
 	if(!$conn)
@@ -55,8 +55,31 @@ session_start();
 
             $name = $_SESSION['name'];
 
-            $insert = "INSERT INTO quiz VALUES($totalCorrect,$name)";
+            echo $name;
 
+            if ($totalCorrect<3)
+            {
+            	echo "Please replay this level";
+           ?>
+<html>
+<body>
+	<a href = "index1.php"> index</a>
+
+</body>
+</html>
+
+           <?php
+
+            }
+            else
+            {
+
+            	echo "proceed to the next level";//+"href = index2.php";
+            }
+
+            $insert = "INSERT INTO quiz VALUES($totalCorrect,'$name')";
+
+            //echo $insert;
 	$run_query = mysql_query($insert,$conn);
 
 		if(!$run_query)
