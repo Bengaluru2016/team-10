@@ -3,8 +3,11 @@
 session_start();
 ?>
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> origin/master
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -20,7 +23,7 @@ session_start();
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<h1>Quiz </h1>
 		
         <?php
             $host = 'localhost';
@@ -53,9 +56,15 @@ session_start();
             
             echo "<div id='results'>$totalCorrect / 5 correct</div>";
 
+<<<<<<< HEAD
+            $insert = "INSERT INTO quiz VALUES(1,1,1,1,1,'$totalCorrect',5)";
+
+
+=======
             $name = $_SESSION['name'];
 
             $insert = "INSERT INTO quiz VALUES($totalCorrect,$name)";
+>>>>>>> origin/master
 
 	$run_query = mysql_query($insert,$conn);
 
@@ -63,6 +72,7 @@ session_start();
 			echo "Failed to insert values\n";
             
         ?>
+
 	
 	</div>
 	

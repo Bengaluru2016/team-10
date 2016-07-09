@@ -13,7 +13,7 @@
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<h1>Quiz</h1>
 		
 		<form action="grade.php" method="post" id="quiz">
 		
@@ -21,21 +21,21 @@
             
                 <li>
                 
-                    <h3>CSS Stands for...</h3>
+                    <h3>What is your favourite organization...</h3>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) Computer Styled Sections </label>
+                        <label for="question-1-answers-A">A) </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) Cascading Style Sheets</label>
+                        <label for="question-1-answers-B">B) RIKTHAM</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C) Crazy Solid Shapes</label>
+                        <label for="question-1-answers-C">C) BLACK BUCKS</label>
                     </div>
                     
                     <div>
@@ -47,26 +47,26 @@
                 
                 <li>
                 
-                    <h3>Internet Explorer 6 was released in...</h3>
+                    <h3>How was your experience here...</h3>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
-                        <label for="question-2-answers-A">A) 2001</label>
+                        <label for="question-2-answers-A">A) Amaazing..</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                        <label for="question-2-answers-B">B) 1998</label>
+                        <label for="question-2-answers-B">B) Wonderful</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
-                        <label for="question-2-answers-C">C) 2006</label>
+                        <label for="question-2-answers-C">C) Mind blowing</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
-                        <label for="question-2-answers-D">D) 2003</label>
+                        <label for="question-2-answers-D">D)Incredible.. </label>
                     </div>
                 
                 </li>
@@ -129,22 +129,21 @@
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
-                        <label for="question-5-answers-A">A) CSS-Tricks</label>
+                        <label for="question-5-answers-A">A) Codeforgood.net</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
-                        <label for="question-5-answers-B">B) CSS-Tricks</label>
+                        <label for="question-5-answers-B">B) Codeforgood.net</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
-                        <label for="question-5-answers-C">C) CSS-Tricks</label>
-                    </div>
+                        <label for="question-5-answers-C">C) Codeforgood.net
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
-                        <label for="question-5-answers-D">D) CSS-Tricks</label>
+                        <label for="question-5-answers-D">D) Codeforgood.net</label>
                     </div>
                 
                 </li>
