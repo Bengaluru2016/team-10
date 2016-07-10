@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<h2>Admin</h2> <br><br>
-		<!-- <form action="" method="POST">
+		<!-- <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
 			Name <br>
 			<input type="text" name="name"> <br><br>
 			Password <br>
@@ -121,9 +121,9 @@
 
 <html>
 <body>
-<h2>Feedback</h2> <br><br>
+<h2>Car Registration Form</h2> <br><br>
 		<form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
-			Remarks<br>
+			Regisration Number <br>
 			<input type="text" name="note"> <br><br>
 		
 			<input type="submit" name="register">
