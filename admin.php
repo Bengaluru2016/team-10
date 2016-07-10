@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<h2>Admin</h2> <br><br>
-		<!-- <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+		<!-- <form action="" method="POST">
 			Name <br>
 			<input type="text" name="name"> <br><br>
 			Password <br>
