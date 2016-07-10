@@ -5,25 +5,25 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script></head>
 
        
-         <body>
-  <script>
-      google.charts.load('current', {'packages':['corechart']});
+	   	   <body>
+	<script>
+	    google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawSeriesChart);
 
     function drawSeriesChart() {
 
       var data = google.visualization.arrayToDataTable([
         ['ID', 'Success', 'Advancement', 'Region',     'Population'],
-        ['1',    80.66,              1.67,      'Hyderabad',  33739900],
-        ['2',    79.84,              1.36,      'Bengaluru',         81902307],
-        ['3',    66.6,               1.84,      'Bengaluru',         55230951],
-        ['4',    72.73,              2.78,      'Mumbai',    79716203],
-        ['5',    80.05,              2,         'Bengaluru',         61801570],
-        ['6',    72.49,              1.7,       'Mumbai',    141850000],
-        ['7',    68.09,              4.77,      'Mumbai',    310907639],
-        ['8',    81.55,              2.96,      'Mumbai',    7485600],
-        ['9',    68.6,               1.54,      'Bengaluru',         141850000],
-        ['ME',    78.09,              2.05,      'Hyderabad',  107007000]
+        ['6',    80.66,              1.67,      'Hyderabad',  33739900],
+        ['5',    79.84,              1.36,      'Mumbai',         81902307],
+        ['1',    66.6,               1.84,      'Mumbai',         55230951],
+        ['2',    72.73,              2.78,      'Bengaluru',    79716203],
+        ['7',    80.05,              2,         'Mumbai',         61801570],
+        ['4',    72.49,              1.7,       'Bengaluru',    141850000],
+        ['3',    68.09,              4.77,      'Bengaluru',    310907639],
+        ['8',    81.55,              2.96,      'Bengaluru',    7485600],
+        ['ME',    68.6,               1.54,      'Hyderabad',         141850000],
+        ['1',    78.09,              2.05,      'Hyderabad',  107007000*'$totalCorrect']
       ]);
 
       var options = {
@@ -33,12 +33,12 @@
         vAxis: {title: 'Advancement'},
         bubble: {textStyle: {fontSize: 10}}
       };
-    
+	  
 
       var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
       chart.draw(data, options);
     }
-  </script>
+	</script>
 
 
 <div id="page-wrap">
@@ -101,6 +101,6 @@
   </script>
 
 
-  
-  <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
-  </body>
+	
+	<div id="series_chart_div" style="width: 900px; height: 500px;"></div>
+	</body>
