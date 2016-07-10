@@ -2,21 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<title>PHP Quiz</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>PHP Quiz</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
 
-	<div id="page-wrap">
+    <div id="page-wrap">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/E6GrQtCh83w" frameborder="0" allowfullscreen></iframe>
-		<h1>Quiz</h1>
-		
-		<form action="ggrade.php" method="post" id="quiz">
-		
+        <h1>Quiz</h1>
+        
+        <form action="ggrade4.php" method="post" id="quiz">
+        
             <ol>
             
                 <li>
@@ -151,20 +151,20 @@
             </ol>
             
             <input type="submit" value="Submit Quiz" />
-		
-		</form>
-	
-	</div>
-	
-	<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	var pageTracker = _gat._getTracker("UA-68528-29");
-	pageTracker._initData();
-	pageTracker._trackPageview();
-	</script>
+        
+        </form>
+    
+    </div>
+    
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-68528-29");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+    </script>
 
 </body>
 

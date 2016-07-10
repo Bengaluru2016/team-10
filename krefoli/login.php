@@ -105,20 +105,7 @@
 		border-color: #be2815;
 	}
 </style>
-<script>
-    function validateForm() {
-        var un = document.loginform.user.value;
-        var pw = document.loginform.password.value;
-        alert(un);
-        if ((un == "admin") && (pw == "admin")) {
-			alert("for admin");
-            window.location.assign("http://www.w3schools.com");
-        }
-        else {
-            window.location="http://localhost/second.html";
-        }
-  }
-</script>
+
 
 </head>
 <body>
@@ -133,7 +120,7 @@
 			<div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
 				<div id="login-access" class="tab-pane fade active in">
 					<h2><i class="glyphicon glyphicon-log-in"></i> Login</h2>						
-					<form name="loginform"  method = 'post' accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal"><br>
+					<form name="loginform" action="blog.html" method = 'post' accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal"><br>
 					
 						<div class="form-group ">
 							<label for="login" class="sr-only">Username </label>

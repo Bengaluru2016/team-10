@@ -1,5 +1,4 @@
 <?php
-// Start the session
 session_start();
 ?>
 
@@ -71,8 +70,7 @@ session_start();
 			$user = 'root';
 			$pwd = '';
 			$db = 'villgro';
-     ;
-
+     
 	$conn = mysql_connect($host,$user,$pwd);
 	if(!$conn)
 		die("Failed to connect".mysql_error());
@@ -87,8 +85,7 @@ session_start();
   if(!mysql_select_db($db,$conn))
     die(mysql_error());
 
-
-            $answer1 = $_POST['question-1-answers'];
+ $answer1 = $_POST['question-1-answers'];
             $answer2 = $_POST['question-2-answers'];
             $answer3 = $_POST['question-3-answers'];
             $answer4 = $_POST['question-4-answers'];
@@ -103,6 +100,7 @@ session_start();
             if ($answer3 == "C") { $totalCorrect++; }
             if ($answer4 == "D") { $totalCorrect++; }
             if ($answer5) { $totalCorrect++; }
+            
             echo "<div id='results'>$totalCorrect / 5 correct</div>";
             echo "<div id='results align='center''>$totalCorrect / 5 correct</div>";
 
@@ -134,15 +132,17 @@ session_start();
                ?>
 <html>
 <body>
-  <a href = "index2.php"> index</a>
+  <a href = "index3.php"> index</a>
+
 </body>
 </html>
- <?php
 
+           <?php
+            
             }
-          
-          $insert = "INSERT INTO quiz VALUES($totalCorrect,NULL,NULL,NULL,NULL,$name)";
-          echo $insert;
+
+             $insert = "INSERT INTO quizz(level2,name) VALUES($totalCorrect,'$name')";
+
 
 	$run_query = mysql_query($insert,$conn);
   //$run_query = mysql_query($insert,$conn);

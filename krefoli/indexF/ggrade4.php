@@ -71,7 +71,7 @@ session_start();
 			$user = 'root';
 			$pwd = '';
 			$db = 'villgro';
-     ;
+      
 
 	$conn = mysql_connect($host,$user,$pwd);
 	if(!$conn)
@@ -87,8 +87,7 @@ session_start();
   if(!mysql_select_db($db,$conn))
     die(mysql_error());
 
-
-            $answer1 = $_POST['question-1-answers'];
+ $answer1 = $_POST['question-1-answers'];
             $answer2 = $_POST['question-2-answers'];
             $answer3 = $_POST['question-3-answers'];
             $answer4 = $_POST['question-4-answers'];
@@ -119,7 +118,7 @@ session_start();
            ?>
 <html>
 <body>
-  <a href = "index1.php"> index</a>
+  <a href = "index5.php"> index</a>
 
 </body>
 </html>
@@ -135,14 +134,15 @@ session_start();
 <html>
 <body>
   <a href = "index2.php"> index</a>
+
 </body>
 </html>
- <?php
 
+           <?php
             }
-          
-          $insert = "INSERT INTO quiz VALUES($totalCorrect,NULL,NULL,NULL,NULL,$name)";
-          echo $insert;
+
+             $insert = "INSERT INTO quizz(level4,name) VALUES($totalCorrect,'$name')";
+
 
 	$run_query = mysql_query($insert,$conn);
   //$run_query = mysql_query($insert,$conn);
