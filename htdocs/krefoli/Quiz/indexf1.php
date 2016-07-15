@@ -25,7 +25,7 @@
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) </label>
+                        <label for="question-1-answers-A">A)   </label>
                     </div>
                     
                     <div>
